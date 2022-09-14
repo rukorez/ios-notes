@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		772A6AEE28D0DCD800F766A3 /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772A6AED28D0DCD800F766A3 /* NotesTableViewController.swift */; };
+		772A6AF028D0E0F800F766A3 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772A6AEF28D0E0F800F766A3 /* NoteViewController.swift */; };
+		772A6AF228D0E35A00F766A3 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772A6AF128D0E35A00F766A3 /* Note.swift */; };
+		77A1144428D0F09400851DBA /* Folder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1144328D0F09400851DBA /* Folder.swift */; };
+		77A1144828D1009500851DBA /* FoldersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A1144728D1009500851DBA /* FoldersTableViewController.swift */; };
 		77DD44E728D0CA32003B455A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DD44E628D0CA32003B455A /* AppDelegate.swift */; };
 		77DD44E928D0CA32003B455A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DD44E828D0CA32003B455A /* SceneDelegate.swift */; };
 		77DD44EB28D0CA32003B455A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DD44EA28D0CA32003B455A /* ViewController.swift */; };
@@ -14,9 +19,15 @@
 		77DD44F128D0CA32003B455A /* MyCustomNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 77DD44EF28D0CA32003B455A /* MyCustomNotes.xcdatamodeld */; };
 		77DD44F328D0CA35003B455A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77DD44F228D0CA35003B455A /* Assets.xcassets */; };
 		77DD44F628D0CA35003B455A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77DD44F428D0CA35003B455A /* LaunchScreen.storyboard */; };
+		77DD44FF28D0CB20003B455A /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77DD44FE28D0CB20003B455A /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		772A6AED28D0DCD800F766A3 /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
+		772A6AEF28D0E0F800F766A3 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		772A6AF128D0E35A00F766A3 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		77A1144328D0F09400851DBA /* Folder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Folder.swift; sourceTree = "<group>"; };
+		77A1144728D1009500851DBA /* FoldersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldersTableViewController.swift; sourceTree = "<group>"; };
 		77DD44E328D0CA32003B455A /* MyCustomNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyCustomNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77DD44E628D0CA32003B455A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77DD44E828D0CA32003B455A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +37,7 @@
 		77DD44F228D0CA35003B455A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77DD44F528D0CA35003B455A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77DD44F728D0CA35003B455A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77DD44FE28D0CB20003B455A /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,13 +73,27 @@
 				77DD44E628D0CA32003B455A /* AppDelegate.swift */,
 				77DD44E828D0CA32003B455A /* SceneDelegate.swift */,
 				77DD44EA28D0CA32003B455A /* ViewController.swift */,
+				77DD44FD28D0CAB8003B455A /* CoreData */,
 				77DD44EC28D0CA32003B455A /* Main.storyboard */,
 				77DD44F228D0CA35003B455A /* Assets.xcassets */,
 				77DD44F428D0CA35003B455A /* LaunchScreen.storyboard */,
 				77DD44F728D0CA35003B455A /* Info.plist */,
-				77DD44EF28D0CA32003B455A /* MyCustomNotes.xcdatamodeld */,
+				772A6AED28D0DCD800F766A3 /* NotesTableViewController.swift */,
+				772A6AEF28D0E0F800F766A3 /* NoteViewController.swift */,
+				77A1144728D1009500851DBA /* FoldersTableViewController.swift */,
 			);
 			path = MyCustomNotes;
+			sourceTree = "<group>";
+		};
+		77DD44FD28D0CAB8003B455A /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				77DD44EF28D0CA32003B455A /* MyCustomNotes.xcdatamodeld */,
+				77DD44FE28D0CB20003B455A /* CoreDataManager.swift */,
+				772A6AF128D0E35A00F766A3 /* Note.swift */,
+				77A1144328D0F09400851DBA /* Folder.swift */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,10 +167,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77A1144828D1009500851DBA /* FoldersTableViewController.swift in Sources */,
+				772A6AF028D0E0F800F766A3 /* NoteViewController.swift in Sources */,
 				77DD44F128D0CA32003B455A /* MyCustomNotes.xcdatamodeld in Sources */,
 				77DD44EB28D0CA32003B455A /* ViewController.swift in Sources */,
+				772A6AF228D0E35A00F766A3 /* Note.swift in Sources */,
 				77DD44E728D0CA32003B455A /* AppDelegate.swift in Sources */,
+				77DD44FF28D0CB20003B455A /* CoreDataManager.swift in Sources */,
 				77DD44E928D0CA32003B455A /* SceneDelegate.swift in Sources */,
+				772A6AEE28D0DCD800F766A3 /* NotesTableViewController.swift in Sources */,
+				77A1144428D0F09400851DBA /* Folder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
